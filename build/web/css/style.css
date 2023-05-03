@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 18px;
+    /*background: #444;*/
+    background: linear-gradient(to bottom left, #dad7cd, #3a5a40, #a3b18a);
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'cairo', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-action {
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    over-flow: hidden;
+}
+
+.btn {
+    position: relative;
+    padding: 5px 14px;
+    background: none;
+    min-width:  200px;
+    margin: 10px;
+    cursor: pointer;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: 1s all ease;
+}
+
+td input {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.gender_item {
+    display: flex;
+    align-items: center;
+    padding:0 30px;
+}
+
+.gender_item label {
+    margin-left: 30px;
+}
+
+
+
+.btn::before,
+.btn.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background: #a8dadc;
+    transition: all 0.6s ease;
+    z-index: -10;
+
+    /*    transform: transform 0.5s;
+        transform-origin:0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);*/
+}
+
+.btn:hover {
+    color: #000;
+    border-color:#000;
+}
+
+
+.btn1::before {
+    position: absolute;
+    width: 0;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+.btn2::before {
+    height: 0;
+    width: 100%;
+}
+
+
+.btn2:hover::before {
+    height: 100%;
+}
+
+
+.btn3::before {
+    width: 100%;
+    height: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+.btn3:hover::before  {
+    height: 380%;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    padding: 4px;
+    border: none;
+    background: none;
+    outline: none;
+    line-height: 12px;
+    color: #fff;
+}
+
+p,
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #f7d600;
+    font-size: 2rem;
+}
+
+th, td, tr {
+    border: 2px solid #ced4da;
+    padding: 10px;
+    text-align: center;
+    width: max-content;
+}
+
+th {
+    color: #ffbd00;
+}
+
+table {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #f7d600;
+}
+
+.message {
+    color: #f7c600;
+    text-align: center;
+    font-size: 25px;
+}
+
+legend,
+fieldset {
+    padding: 10px;
+}
