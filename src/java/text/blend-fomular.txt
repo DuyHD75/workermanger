@@ -1,2 +1,2 @@
-blend-fomular
-======
+this is the blend-fomular file
+this is the first step to use git 
